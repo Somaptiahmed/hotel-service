@@ -1,0 +1,203 @@
+[
+    {
+      "_id": 1,
+      "serviceImage": "https://i.ibb.co.com/cyfcbkc/1a.jpg",
+      "serviceTitle": "Sea View Deluxe Room",
+      "companyName": "Cox's Paradise Hotel",
+      "website": "https://coxparadisehotel.com",
+      "description": "A luxurious room with a stunning sea view, perfect for a relaxing getaway.",
+      "category": "Accommodation",
+      "price": 120
+    },
+    {
+      "_id": 2,
+      "serviceImage": "https://i.ibb.co.com/Jch604v/2a.jpg",
+      "serviceTitle": "Family Suite",
+      "companyName": "Ocean Breeze Resort",
+      "website": "https://oceanbreezeresort.com",
+      "description": "Spacious suite ideal for families, complete with modern amenities.",
+      "category": "Accommodation",
+      "price": 200
+    },
+    {
+      "_id": 3,
+      "serviceImage": "https://i.ibb.co.com/qjGhWPg/3a.jpg",
+      "serviceTitle": "Scuba Diving Adventure",
+      "companyName": "Blue Waves Adventures",
+      "website": "https://bluewavesadventures.com",
+      "description": "Experience the underwater beauty of Cox's Bazar with our scuba diving package.",
+      "category": "Adventure",
+      "price": 80
+    },
+    {
+      "_id": 4,
+      "serviceImage": "https://i.ibb.co.com/RB55gJd/4a.jpg",
+      "serviceTitle": "Beachside Dinner",
+      "companyName": "Sunset Grill",
+      "website": "https://sunsetgrill.com",
+      "description": "Enjoy a romantic dinner by the beach with our special menu.",
+      "category": "Dining",
+      "price": 50
+    },
+    {
+      "_id": 5,
+      "serviceImage": "https://i.ibb.co.com/ZgrSp0B/5a.jpg",
+      "serviceTitle": "Sunrise Photography Tour",
+      "companyName": "Cox Clicks",
+      "website": "https://coxclicks.com",
+      "description": "Capture the beauty of sunrise at Cox's Bazar with our guided photography tour.",
+      "category": "Tour",
+      "price": 30
+    },
+    {
+      "_id": 6,
+      "serviceImage": "https://i.ibb.co.com/ZzS3h8k/6a.jpg",
+      "serviceTitle": "Fishing Expedition",
+      "companyName": "Deep Sea Explorers",
+      "website": "https://deepseaexplorers.com",
+      "description": "Join a thrilling fishing expedition in the Bay of Bengal.",
+      "category": "Adventure",
+      "price": 70
+    },
+    {
+      "_id": 7,
+      "serviceImage": "https://i.ibb.co.com/WF1L8t2/7a.jpg",
+      "serviceTitle": "Beach Volleyball",
+      "companyName": "Cox Sports Club",
+      "website": "https://coxsportsclub.com",
+      "description": "Have fun playing volleyball on the sandy beaches of Cox's Bazar.",
+      "category": "Recreation",
+      "price": 10
+    },
+    {
+      "_id": 8,
+      "serviceImage": "https://i.ibb.co.com/34cLjhJ/H11.jpg",
+      "serviceTitle": "Traditional Spa Package",
+      "companyName": "Relax & Rejuvenate Spa",
+      "website": "https://relaxrejuvenatespa.com",
+      "description": "Pamper yourself with our traditional spa treatments.",
+      "category": "Wellness",
+      "price": 100
+    },
+    {
+      "_id": 9,
+      "serviceImage": "https://i.ibb.co.com/ypBYfGj/9a.jpg",
+      "serviceTitle": "Cycling Tour",
+      "companyName": "Beach Riders",
+      "website": "https://beachriders.com",
+      "description": "Explore the scenic routes of Cox's Bazar on a cycling tour.",
+      "category": "Tour",
+      "price": 20
+    },
+    {
+      "_id": 10,
+      "serviceImage": "https://i.ibb.co.com/Tvb2T3c/10a.jpg",
+      "serviceTitle": "Local Cuisine Cooking Class",
+      "companyName": "Taste of Cox",
+      "website": "https://tasteofcox.com",
+      "description": "Learn to cook authentic Cox's Bazar dishes with local chefs.",
+      "category": "Activity",
+      "price": 25
+    },
+    {
+      "_id": 11,
+      "serviceImage": "https://i.ibb.co.com/9ZZcHrN/12a.jpg",
+      "serviceTitle": "Snorkeling Adventure",
+      "companyName": "Coral Seekers",
+      "website": "https://coralseekers.com",
+      "description": "Discover the vibrant coral reefs of Cox's Bazar.",
+      "category": "Adventure",
+      "price": 60
+    },
+    {
+      "_id": 12,
+      "serviceImage": "https://i.ibb.co.com/hfZChZ2/11a.jpg",
+      "serviceTitle": "Yoga by the Beach",
+      "companyName": "Zen Retreat",
+      "website": "https://zenretreat.com",
+      "description": "Relax your mind and body with our guided yoga sessions by the sea.",
+      "category": "Wellness",
+      "price": 15
+    },
+    {
+      "_id": 13,
+      "serviceImage": "https://i.ibb.co.com/qRNGr7D/13a.jpg",
+      "serviceTitle": "Sunset Cruise",
+      "companyName": "Cox Marine Tours",
+      "website": "https://coxmarinetours.com",
+      "description": "Enjoy a peaceful cruise at sunset along the coastline.",
+      "category": "Recreation",
+      "price": 40
+    },
+    {
+      "_id": 14,
+      "serviceImage": "https://i.ibb.co.com/YkjxG9B/14a.jpg",
+      "serviceTitle": "Cultural Dance Performance",
+      "companyName": "Heritage Shows",
+      "website": "https://heritageshows.com",
+      "description": "Experience the vibrant culture of Cox's Bazar with live dance performances.",
+      "category": "Entertainment",
+      "price": 20
+    },
+    {
+      "_id": 15,
+      "serviceImage": "https://i.ibb.co.com/GCBz5L2/15a.jpg",
+      "serviceTitle": "Beach Bonfire Night",
+      "companyName": "Campfire Adventures",
+      "website": "https://campfireadventures.com",
+      "description": "Enjoy a cozy bonfire night on the beach with friends and family.",
+      "category": "Recreation",
+      "price": 30
+    },
+    {
+      "_id": 16,
+      "serviceImage": "https://i.ibb.co.com/m63sX4w/16a.webp",
+      "serviceTitle": "Paragliding Experience",
+      "companyName": "Sky Adventures",
+      "website": "https://skyadventures.com",
+      "description": "Soar above Cox's Bazar and take in breathtaking views from the sky.",
+      "category": "Adventure",
+      "price": 100
+    },
+    {
+      "_id": 17,
+      "serviceImage": "https://i.ibb.co.com/Js5jbzY/17a.jpg.jpg",
+      "serviceTitle": "Fishing Village Tour",
+      "companyName": "Local Explorers",
+      "website": "https://localexplorers.com",
+      "description": "Discover the daily life of local fishing communities.",
+      "category": "Tour",
+      "price": 25
+    },
+    {
+      "_id": 18,
+      "serviceImage": "https://i.ibb.co.com/cySbw2Q/18a.jpg",
+      "serviceTitle": "Luxury Yacht Rental",
+      "companyName": "Elite Yachts",
+      "website": "https://eliteyachts.com",
+      "description": "Charter a luxury yacht for a private cruise.",
+      "category": "Recreation",
+      "price": 500
+    },
+    {
+      "_id": 19,
+      "serviceImage": "https://i.ibb.co.com/3B74JZ3/19a.jpg",
+      "serviceTitle": "Mangrove Safari",
+      "companyName": "Eco Adventures",
+      "website": "https://ecoadventures.com",
+      "description": "Explore the mangrove forests near Cox's Bazar.",
+      "category": "Tour",
+      "price": 50
+    },
+    {
+      "_id": 20,
+      "serviceImage": "https://i.ibb.co.com/bst0PWw/20a.webp",
+      "serviceTitle": "Beach Cleanup Activity",
+      "companyName": "Green Beach Initiative",
+      "website": "https://greenbeachinitiative.com",
+      "description": "Join our beach cleanup drive and make a difference.",
+      "category": "Activity",
+      "price": 0
+    }
+  ]
+  

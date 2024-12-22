@@ -71,7 +71,7 @@ const Navbar = () => {
         <Link to="/" className="text-white text-xl">
           Home
         </Link>
-        <Link to="/allMovie" className="text-white text-xl">
+        <Link to="/services" className="text-white text-xl">
           Services
         </Link>
 

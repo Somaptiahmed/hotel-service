@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
+import FeaturedService from './FeaturedService';
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         </button>
       </div>
       <Banner />
+      <FeaturedService></FeaturedService>
     
       <Footer />
     </div>

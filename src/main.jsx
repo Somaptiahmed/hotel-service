@@ -25,6 +25,7 @@ import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import AddService from "./pages/AddService.jsx";
 import MyReviews from "./pages/MyReviews.jsx";
+import Services from "./pages/Services.jsx";
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   },
 
   
+  {
+    path: "/services",
+    element: <Services />,
+  },
   {
     path: "/addService",
     element: <AddService />,
