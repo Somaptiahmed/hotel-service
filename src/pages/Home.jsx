@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import FeaturedService from './FeaturedService';
+import MeetOurPartners from './MeetOurPartners';
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
       </div>
       <Banner />
       <FeaturedService></FeaturedService>
-    
+      <MeetOurPartners></MeetOurPartners>
       <Footer />
     </div>
   );
