@@ -31,6 +31,7 @@ import MyService from "./pages/MyService.jsx";
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -68,8 +69,10 @@ const router = createBrowserRouter([
     element: <AddService />,
   },
   {
-    path: "/serviceDetail",
+    path: "/serviceDetail/:serviceId",
     element: <ServiceDetails></ServiceDetails>,
+    
+
   },
   {
     path: "/myReviews",
