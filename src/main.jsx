@@ -26,6 +26,9 @@ import Login from "./pages/Login.jsx";
 import AddService from "./pages/AddService.jsx";
 import MyReviews from "./pages/MyReviews.jsx";
 import Services from "./pages/Services.jsx";
+import ServiceDetails from "./pages/ServiceDetails.jsx";
+import MyService from "./pages/MyService.jsx";
+
 
 
 const router = createBrowserRouter([
@@ -65,8 +68,16 @@ const router = createBrowserRouter([
     element: <AddService />,
   },
   {
+    path: "/serviceDetail",
+    element: <ServiceDetails></ServiceDetails>,
+  },
+  {
     path: "/myReviews",
     element: <MyReviews />,
+  },
+  {
+    path: "/myService",
+    element: <MyService />,
   },
   {
     path: "/footer",

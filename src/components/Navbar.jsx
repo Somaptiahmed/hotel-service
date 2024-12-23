@@ -84,6 +84,13 @@ const Navbar = () => {
             <Link to="/myReviews" className="text-white text-xl">
               My Reviews
             </Link>
+            <Link to="/serviceDetail" className="text-white text-xl">
+              Service Details
+            </Link>
+            <Link to="/myService" className="text-white text-xl">
+              My Service
+            </Link>
+            
           </>
         )}
 

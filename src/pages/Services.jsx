@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
+
+
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 const Services = () => {
     const [services, setServices] = useState([]);
+    
+    
 
     useEffect(() => {
         // Fetch services from the API
@@ -23,7 +28,7 @@ const Services = () => {
         <div>
             <Navbar></Navbar>
 
-<div className="container mx-auto py-10 w-11/12 mx-auto">
+<div className="container mx-auto py-10 w-11/12 ">
           <h1 className="text-3xl font-bold text-center mb-6">Available Services</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
@@ -48,12 +53,15 @@ const Services = () => {
                     <strong>Price:</strong>{" "}
                     {service.price === 0 ? "Free" : `$${service.price}`}
                   </p>
-                  <button
-                    className="mt-4 bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded"
-                    onClick={() => alert(`Details of ${service.serviceTitle}`)}
-                  >
-                    See Details
-                  </button>
+                 <Link>
+                 <button
+                 
+                 className="mt-4 bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded"
+               >
+                 See Details
+               </button>
+
+                 </Link>
                 </div>
               </div>
             ))}
@@ -65,3 +73,6 @@ const Services = () => {
 };
 
 export default Services;
+
+
+
