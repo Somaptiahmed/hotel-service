@@ -1,7 +1,9 @@
+
 import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-import a11 from "../assets/a11.webp"
+import a11 from "../assets/a11.webp";
+
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext); // Fetch user and logOut from context
   const navigate = useNavigate();
@@ -12,13 +14,15 @@ const Navbar = () => {
   useEffect(() => {
     const routeTitleMap = {
       "/": "Home - Hotel Motel",
-      
+      "/services": "Services - Hotel Motel",
+      "/addService": "Add Service - Hotel Motel",
+      "/myReviews": "My Reviews - Hotel Motel",
+      "/myService": "My Services - Hotel Motel",
+      "/auth/login": "Login - Hotel Motel",
+      "/auth/register": "Register - Hotel Motel",
     };
 
-    const currentPath = Object.keys(routeTitleMap).find((path) =>
-      location.pathname.includes(path.replace(":id", ""))
-    );
-
+    const currentPath = location.pathname;
     document.title = routeTitleMap[currentPath] || "Hotel Motel";
   }, [location.pathname]);
 
@@ -35,8 +39,8 @@ const Navbar = () => {
     <nav className="bg-slate-900 p-4 flex justify-between items-center h-24 sticky top-0 z-10">
       {/* Brand Logo */}
       <div className="text-white text-3xl font-bold flex">
-      <img src={a11} alt="" className="w-24 h-11" />
-        <Link to="/"> Hotel Motel</Link>
+        <img src={a11} alt="Logo" className="w-24 h-11" />
+        <Link to="/">Hotel Motel</Link>
       </div>
 
       {/* Toggle Button for Small Screens */}
@@ -84,17 +88,11 @@ const Navbar = () => {
             <Link to="/myReviews" className="text-white text-xl">
               My Reviews
             </Link>
-            
             <Link to="/myService" className="text-white text-xl">
-              My Service
+              My Services
             </Link>
-            
           </>
         )}
-
-        {/* <Link to="/updateMovie/:id" className="text-white text-xl">
-          Update Movie
-        </Link> */}
       </div>
 
       {/* User Profile & Authentication Links */}

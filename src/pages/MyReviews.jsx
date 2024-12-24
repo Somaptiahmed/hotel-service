@@ -182,24 +182,28 @@ const MyReviews = () => {
                 </select>
               </div>
               <div className="flex justify-end space-x-2">
-                <button
-                  type="button"
-                  onClick={() => setIsUpdateModalOpen(false)}
-                  className="bg-gray-500 text-white px-4 py-2 rounded"
-                >
-                  Cancel
-                </button>
-                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
-                  Update Review
-                </button>
-              </div>
+  <button
+    type="button"
+    onClick={() => setIsUpdateModalOpen(false)}
+    className="bg-gray-500 text-white px-4 py-2 rounded"
+  >
+    Cancel
+  </button>
+  <button
+    type="submit"
+    className="bg-blue-500 text-white px-4 py-2 rounded"
+  >
+    Update Review
+  </button>
+</div>
+
             </form>
           </div>
         </div>
       )}
 
-      {/* Delete Review Confirmation Modal */}
-      {isDeleteModalOpen && (
+        {/* Delete Review Confirmation Modal */}
+        {isDeleteModalOpen && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-8 rounded shadow-lg w-96">
             <h2 className="text-2xl mb-4">Are you sure?</h2>
@@ -216,8 +220,7 @@ const MyReviews = () => {
                 className="bg-red-500 text-white px-4 py-2 rounded"
               >
                 Delete Review
-              </button>
-            </div>
+              </button></div>
           </div>
         </div>
       )}
