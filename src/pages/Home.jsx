@@ -5,6 +5,8 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import FeaturedService from './FeaturedService';
 import MeetOurPartners from './MeetOurPartners';
+import Adventure from '../components/Adventure';
+import Animation from '../components/Animation';
 
 
 const Home = () => {
@@ -29,7 +31,9 @@ const Home = () => {
         </button>
       </div>
       <Banner />
+      <Animation></Animation>
       <FeaturedService></FeaturedService>
+      <Adventure></Adventure>
       <MeetOurPartners></MeetOurPartners>
       <Footer />
     </div>
