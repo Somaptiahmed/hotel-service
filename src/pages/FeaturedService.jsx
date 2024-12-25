@@ -12,7 +12,7 @@ const FeaturedService = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:5000/services");
+        const response = await fetch("https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services");
         if (!response.ok) {
           throw new Error("Failed to fetch services");
         }

@@ -13,7 +13,7 @@ const Services = () => {
     // Fetch services from the API
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:5000/services");
+        const response = await fetch("https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services");
         const data = await response.json();
         setServices(data);
       } catch (error) {
