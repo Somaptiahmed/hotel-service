@@ -100,8 +100,15 @@ const AuthProvider = ({ children }) => {
    */
   return (
     <AuthContext.Provider value={authInfo}>
-      {!loading ? children : <div><span className="loading loading-infinity loading-lg"></span></div>}
-    </AuthContext.Provider>
+  {!loading ? (
+    children
+  ) : (
+    <div className="flex items-center justify-center min-h-screen">
+      <span className="loading loading-infinity loading-lg"></span>
+    </div>
+  )}
+</AuthContext.Provider>
+
   );
 };
 
