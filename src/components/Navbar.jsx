@@ -5,10 +5,10 @@ import { AuthContext } from "../provider/AuthProvider";
 import a11 from "../assets/a11.webp";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext); // Fetch user and logOut from context
+  const { user, logOut } = useContext(AuthContext); 
   const navigate = useNavigate();
-  const location = useLocation(); // To track the current route
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for dropdown menu
+  const location = useLocation(); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   // Dynamically change the browser title based on the current route
   useEffect(() => {
@@ -28,8 +28,8 @@ const Navbar = () => {
 
   const handleLogOut = async () => {
     try {
-      await logOut(); // Log the user out
-      navigate("/"); // Redirect to home page after logout
+      await logOut(); 
+      navigate("/"); 
     } catch (error) {
       console.error("Error during logout:", error);
     }
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-slate-900 p-4 flex justify-between items-center h-24 sticky top-0 z-10">
-      {/* Brand Logo */}
+      
       <div className="text-white text-3xl font-bold flex">
         <img src={a11} alt="Logo" className="w-24 h-11" />
         <Link to="/">Hotel Motel</Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* User Profile & Authentication Links */}
+      {/* User Profile */}
       <div className="flex items-center gap-4">
         {user ? (
           <div className="flex items-center gap-2">

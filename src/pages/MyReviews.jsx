@@ -1,18 +1,18 @@
 
 
 import React, { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../provider/AuthProvider"; // Import the AuthContext
+import { AuthContext } from "../provider/AuthProvider"; 
 import { toast } from "react-toastify";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const MyReviews = () => {
-  const { user } = useContext(AuthContext); // Get the user object from context
+  const { user } = useContext(AuthContext); 
   const [reviews, setReviews] = useState([]);
-  const [selectedReview, setSelectedReview] = useState(null); // To store the selected review for updating
-  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false); // Modal visibility state for update
-  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false); // Modal visibility state for delete
-  const [deleteReviewId, setDeleteReviewId] = useState(null); // To store the review id to be deleted
+  const [selectedReview, setSelectedReview] = useState(null); 
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false); 
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false); 
+  const [deleteReviewId, setDeleteReviewId] = useState(null); 
 
   // Fetch reviews for the logged-in user
   useEffect(() => {

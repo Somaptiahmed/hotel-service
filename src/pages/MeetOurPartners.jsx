@@ -5,19 +5,19 @@ const partners = [
     name: "Partner 1",
     logo: "https://i.ibb.co.com/rvzFcKq/11c.webp", 
     description: "You will get any information about hotel room reservation.",
-    meetLink: "https://meet.google.com/fake-meet-123", // Fake Google Meet link
+    meetLink: "https://meet.google.com/fake-meet-123", 
   },
   {
     name: "Partner 2",
     logo: "https://i.ibb.co.com/VJ2s7k6/11B.png", 
     description: "You will get information about root service.",
-    meetLink: "https://meet.google.com/fake-meet-456", // Fake Google Meet link
+    meetLink: "https://meet.google.com/fake-meet-456", 
   },
   {
     name: "Partner 3",
-    logo: "https://i.ibb.co.com/LrDFnFr/11A.png", // Replace with actual logo URL
+    logo: "https://i.ibb.co.com/LrDFnFr/11A.png", 
     description: "Except these if you need any information feel comfortable to ask me.",
-    meetLink: "https://meet.google.com/fake-meet-789", // Fake Google Meet link
+    meetLink: "https://meet.google.com/fake-meet-789", 
   },
 ];
 

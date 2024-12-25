@@ -1,6 +1,9 @@
 
+
+
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
+import { toast } from "react-toastify";
 
 const MyService = () => {
   const [services, setServices] = useState([]);
@@ -14,7 +17,6 @@ const MyService = () => {
   const [updatedPrice, setUpdatedPrice] = useState("");
 
   useEffect(() => {
-    // Fetch services from the API
     const fetchServices = async () => {
       try {
         const response = await fetch("http://localhost:5000/services");
@@ -45,11 +47,16 @@ const MyService = () => {
     setCurrentService(service);
     setUpdatedTitle(service.serviceTitle);
     setUpdatedCategory(service.category);
-    setUpdatedPrice(service.price);
+    setUpdatedPrice(service.price.toString());
     setShowUpdateModal(true);
   };
 
   const confirmUpdate = async () => {
+    if (!updatedTitle || !updatedCategory || !updatedPrice) {
+      toast.error("All fields are required!");
+      return;
+    }
+
     const updatedService = {
       serviceTitle: updatedTitle,
       category: updatedCategory,
@@ -67,7 +74,13 @@ const MyService = () => {
           body: JSON.stringify(updatedService),
         }
       );
+
+      if (!response.ok) {
+        throw new Error("Failed to update the service");
+      }
+
       const result = await response.json();
+
       if (result.modifiedCount > 0) {
         setServices((prev) =>
           prev.map((service) =>
@@ -83,12 +96,14 @@ const MyService = () => {
               : service
           )
         );
+        toast.success("Service updated successfully!");
         setShowUpdateModal(false);
       } else {
-        console.error("Error: Service could not be updated.");
+        toast.error("Service could not be updated.");
       }
     } catch (error) {
       console.error("Error updating service:", error);
+      toast.error("Failed to update service. Please try again.");
     }
   };
 
@@ -97,28 +112,6 @@ const MyService = () => {
     setShowDeleteModal(true);
   };
 
-  // const confirmDelete = async () => {
-  //   try {
-  //     const response = await fetch(
-  //       `http://localhost:5000/services/${currentService._id}`,
-  //       {
-  //         method: "DELETE",
-  //       }
-  //     );
-  //     const result = await response.json();
-  //     if (result.deletedCount > 0) {
-  //       setServices(services.filter((service) => service._id !== currentService._id));
-  //       setFilteredServices(
-  //         filteredServices.filter((service) => service._id !== currentService._id)
-  //       );
-  //       setShowDeleteModal(false);
-  //     } else {
-  //       console.error("Error: Service could not be deleted.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error deleting service:", error);
-  //   }
-  // };
   const confirmDelete = async () => {
     try {
       const response = await fetch(
@@ -137,25 +130,22 @@ const MyService = () => {
           filteredServices.filter((service) => service._id !== currentService._id)
         );
         setShowDeleteModal(false);
-        
-        // Show success toast
         toast.success("Service deleted successfully!");
       } else {
-        console.error("Error: Service could not be deleted.");
+        toast.error("Service could not be deleted.");
       }
     } catch (error) {
       console.error("Error deleting service:", error);
       toast.error("Failed to delete service. Please try again.");
     }
   };
-  
+
   return (
     <div>
       <Navbar />
       <div className="container mx-auto py-10 w-11/12">
         <h1 className="text-3xl font-bold text-center mb-6">My Services</h1>
 
-        {/* Search Bar */}
         <div className="mb-6">
           <input
             type="text"
@@ -166,7 +156,6 @@ const MyService = () => {
           />
         </div>
 
-        {/* Services Table */}
         <table className="min-w-full table-auto border-collapse">
           <thead>
             <tr className="bg-purple-100">
@@ -204,7 +193,6 @@ const MyService = () => {
         </table>
       </div>
 
-      {/* Update Modal */}
       {showUpdateModal && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded shadow-lg w-96">
@@ -248,8 +236,7 @@ const MyService = () => {
         </div>
       )}
 
-      {/* Delete Confirmation Modal */}
-      {/* {showDeleteModal && (
+      {showDeleteModal && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded shadow-lg w-96">
             <h2 className="text-2xl mb-4">Delete Service</h2>
@@ -270,32 +257,7 @@ const MyService = () => {
             </div>
           </div>
         </div>
-      )} */}
-
-      {/* Delete Confirmation Modal */}
-{showDeleteModal && (
-  <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
-    <div className="bg-white p-6 rounded shadow-lg w-96">
-      <h2 className="text-2xl mb-4">Delete Service</h2>
-      <p className="mb-6">Are you sure you want to delete this service?</p>
-      <div className="flex justify-end space-x-4">
-        <button
-          className="bg-gray-500 text-white px-4 py-2 rounded"
-          onClick={() => setShowDeleteModal(false)}
-        >
-          Cancel
-        </button>
-        <button
-          className="bg-red-500 text-white px-4 py-2 rounded"
-          onClick={confirmDelete}
-        >
-          Delete
-        </button>
-      </div>
-    </div>
-  </div>
-)}
-
+      )}
     </div>
   );
 };

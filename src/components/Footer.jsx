@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 py-10">
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
+          
           <div>
             <h2 className="text-white text-lg font-bold mb-4">About Us</h2>
             <p className="text-sm">
@@ -13,7 +13,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          
           <div>
             <h2 className="text-white text-lg font-bold mb-4">Quick Links</h2>
             <ul className="space-y-2">
@@ -40,7 +40,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          
           <div>
             <h2 className="text-white text-lg font-bold mb-4">Contact</h2>
             <ul className="space-y-2 text-sm">
@@ -62,7 +62,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media */}
+          
           <div>
             <h2  className="mb-2 font-bold text-xl">Follow Us</h2>
             <div >

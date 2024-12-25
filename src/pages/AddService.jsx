@@ -55,8 +55,7 @@ const AddService = () => {
                     <input
                         type="text"
                         name="serviceImage"
-                        // value={serviceData.serviceImage}
-                        // onChange={handleInputChange}
+                        
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     />
@@ -66,8 +65,7 @@ const AddService = () => {
                     <input
                         type="text"
                         name="serviceTitle"
-                        // value={serviceData.serviceTitle}
-                        // onChange={handleInputChange}
+                        
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     />
@@ -77,8 +75,7 @@ const AddService = () => {
                     <input
                         type="text"
                         name="companyName"
-                        // value={serviceData.companyName}
-                        // onChange={handleInputChange}
+                        
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     />
@@ -88,8 +85,7 @@ const AddService = () => {
                     <input
                         type="url"
                         name="website"
-                        // value={serviceData.website}
-                        // onChange={handleInputChange}
+                       
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     />
@@ -98,8 +94,7 @@ const AddService = () => {
                     <label className="block font-medium">Description</label>
                     <textarea
                         name="description"
-                        // value={serviceData.description}
-                        // onChange={handleInputChange}
+                       
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     ></textarea>
@@ -109,8 +104,7 @@ const AddService = () => {
                     <input
                         type="text"
                         name="category"
-                        // value={serviceData.category}
-                        // onChange={handleInputChange}
+                        
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     />
@@ -120,8 +114,7 @@ const AddService = () => {
                     <input
                         type="number"
                         name="price"
-                        // value={serviceData.price}
-                        // onChange={handleInputChange}
+                        
                         className="w-full p-2 border-2 border-slate-600 rounded"
                         required
                     />

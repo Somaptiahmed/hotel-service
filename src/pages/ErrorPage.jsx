@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ErrorPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900">
-      {/* Animation div */}
+     
       <div className="w-1/2 lg:w-1/3 mb-6">
         <div className="animate-pulse text-6xl font-bold">404</div>
       </div>
