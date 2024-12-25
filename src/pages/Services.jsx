@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   const [services, setServices] = useState([]);
+  const [searchQuery, setSearchQuery] = useState(""); // State for search query
 
   useEffect(() => {
     // Fetch services from the API
@@ -23,13 +24,31 @@ const Services = () => {
     fetchServices();
   }, []);
 
+  // Filter services based on the search query
+  const filteredServices = services.filter((service) =>
+    service.serviceTitle.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div>
       <Navbar />
       <div className="container mx-auto py-10 w-11/12">
         <h1 className="text-3xl font-bold text-center mb-6">Available Services</h1>
+
+        {/* Search Input */}
+        <div className="mb-6 text-center">
+          <input
+            type="text"
+            placeholder="Search by Service Title..."
+            className="px-4 py-2 border rounded-lg w-full max-w-md mx-auto"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
+
+        {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
+          {filteredServices.map((service) => (
             <div
               key={service._id}
               className="border rounded-lg shadow-md overflow-hidden bg-white flex flex-col"
@@ -73,7 +92,6 @@ const Services = () => {
 };
 
 export default Services;
-
 
 
 
