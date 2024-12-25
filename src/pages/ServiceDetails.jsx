@@ -34,7 +34,7 @@ const ServiceDetails = () => {
     const fetchServiceDetails = async () => {
       try {
         // Fetch service details
-        const response = await fetch(`https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services/${serviceId}`);
+        const response = await fetch(`https://assignment-11-server-site-psi.vercel.app/services/${serviceId}`);
         const data = await response.json();
         setService(data);
 
@@ -45,7 +45,7 @@ const ServiceDetails = () => {
         }));
 
         // Fetch reviews for the service
-        const reviewsResponse = await fetch(`https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services/${serviceId}/reviews`);
+        const reviewsResponse = await fetch(`https://assignment-11-server-site-psi.vercel.app/services/${serviceId}/reviews`);
         const reviewsData = await reviewsResponse.json();
         setReviews(reviewsData);
       } catch (error) {
@@ -79,7 +79,7 @@ const ServiceDetails = () => {
     };
 
     try {
-      const response = await fetch(`https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services/${serviceId}/reviews`, {
+      const response = await fetch(`https://assignment-11-server-site-psi.vercel.app/services/${serviceId}/reviews`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

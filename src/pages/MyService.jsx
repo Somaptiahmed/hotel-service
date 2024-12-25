@@ -19,7 +19,7 @@ const MyService = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services");
+        const response = await fetch("https://assignment-11-server-site-psi.vercel.app/services");
         const data = await response.json();
         setServices(data);
         setFilteredServices(data);
@@ -65,7 +65,7 @@ const MyService = () => {
 
     try {
       const response = await fetch(
-        `https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services/${currentService._id}`,
+        `https://assignment-11-server-site-psi.vercel.app/services/${currentService._id}`,
         {
           method: "PUT",
           headers: {
@@ -115,7 +115,7 @@ const MyService = () => {
   const confirmDelete = async () => {
     try {
       const response = await fetch(
-        `https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services/${currentService._id}`,
+        `https://assignment-11-server-site-psi.vercel.app/services/${currentService._id}`,
         {
           method: "DELETE",
           headers: {

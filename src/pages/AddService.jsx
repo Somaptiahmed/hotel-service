@@ -22,7 +22,7 @@ const AddService = () => {
     console.log(newService);
 
      // Send data to the server
-     fetch("https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//services", {
+     fetch("https://assignment-11-server-site-psi.vercel.app/services", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newService),

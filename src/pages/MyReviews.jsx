@@ -19,7 +19,7 @@ const MyReviews = () => {
     if (user?.email) {
       const fetchReviews = async () => {
         try {
-          const response = await fetch(`https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//reviews/user/${user.email}`);
+          const response = await fetch(`https://assignment-11-server-site-psi.vercel.app/reviews/user/${user.email}`);
           const data = await response.json();
           if (response.ok) {
             setReviews(data);
@@ -46,7 +46,7 @@ const MyReviews = () => {
     };
 
     try {
-      const response = await fetch(`https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//reviews/${selectedReview._id}`, {
+      const response = await fetch(`https://assignment-11-server-site-psi.vercel.app/reviews/${selectedReview._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const MyReviews = () => {
   // Handle Delete Review
   const handleDeleteReview = async () => {
     try {
-      const response = await fetch(`https://assignment-11-server-site-a1qjtp8vc-somaptis-projects.vercel.app//reviews/${deleteReviewId}`, {
+      const response = await fetch(`https://assignment-11-server-site-psi.vercel.app/reviews/${deleteReviewId}`, {
         method: "DELETE",
       });
 
