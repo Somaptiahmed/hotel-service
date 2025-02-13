@@ -19,6 +19,7 @@ const MyReviews = () => {
     if (user?.email) {
       const fetchReviews = async () => {
         try {
+         
           const response = await fetch(`https://assignment-11-server-site-psi.vercel.app/reviews/user/${user.email}`);
           const data = await response.json();
           if (response.ok) {
@@ -99,7 +100,7 @@ const MyReviews = () => {
   return (
     <div>
         <Navbar></Navbar>
-        <div className="container mx-auto py-10 w-9/12">
+        <div className="mt-20 container mx-auto py-10 w-9/12">
       <h1 className="text-3xl font-bold mb-4">My Reviews</h1>
       {reviews.length === 0 ? (
         <p>You haven't posted any reviews yet.</p>

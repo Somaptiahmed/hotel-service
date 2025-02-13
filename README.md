@@ -87,5 +87,3 @@ project
 ├── tailwind.config.js
 └── README.md
 ```
-
-

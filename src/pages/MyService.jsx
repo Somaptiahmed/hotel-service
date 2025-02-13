@@ -143,7 +143,7 @@ const MyService = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto py-10 w-11/12">
+      <div className="mt-20 container mx-auto py-10 w-11/12">
         <h1 className="text-3xl font-bold text-center mb-6">My Services</h1>
 
         <div className="mb-6">
